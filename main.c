@@ -76,13 +76,8 @@ void create_matrix_dis (int n, int m, int m_car[][m], int m_dis[][n])
     int i, j;
     
     for (i = 0; i < n; i++)
-    {
         for (j = 0; j < m; j++)
-        {
             m_dis[i][j] = sum_dis(m, &m_car[i][0], &m_car[j][0]);
-        }
-        
-    }
 }
 
 int sum_sim (int m, int *v1, int *v2)
@@ -101,13 +96,9 @@ void create_matrix_sim (int n, int m, int m_car[][m], int m_sim[][n])
     int i, j;
     
     for (i = 0; i < n; i++)
-    {
         for (j = 0; j < m; j++)
-        {
             m_sim[i][j] = sum_sim(m, &m_car[i][0], &m_car[j][0]);
-        }
         
-    }
 }
 
 int main ()
